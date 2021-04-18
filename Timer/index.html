@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Timer</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <h1>Timer</h1>
+      <div class="zeitinput">
+         <!--Input type="number" ist immer ein String. In number umwandeln-->
+         <input id="zeiteingabe" type="number" min="1" max="60" />
+      </div>
+      <div class="timer">
+         <input id="startbutton" type="button" value="Start" />
+         <p id="countdown"></p>
+         <input id="pausebutton" type="button" value="Pause" />
+         <input id="resetbutton" type="button" value="Reset" />
+      </div>
+      <hr />
+
+      <div class="stoppuhr">
+         <h1>Stoppuhr</h1>
+         <input id="startbutton-stoppuhr" type="button" value="Start" />
+         <p id="countup"></p>
+         <input id="pausebutton-stoppuhr" type="button" value="Pause" />
+      </div>
+
+      <script src="index.js"></script>
+      <script src="stoppuhr.js"></script>
+   </body>
+</html>
